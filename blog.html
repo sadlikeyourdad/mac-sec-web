@@ -83,6 +83,43 @@
         ul#postList li a:hover {
             text-decoration: underline;
         }
+
+        .post-card {
+            display: flex;
+            flex-direction: column;
+            background-color: #f7f7f7;
+            border: 1px solid #e0e0e0;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .post-card-image {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .post-card-content {
+            padding: 20px;
+        }
+
+        .post-card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+
+        .post-card-excerpt {
+            margin-bottom: 10px;
+        }
+
+        .post-card-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.875rem;
+            color: #888;
+        }
+
     </style>
 </head>
 <body>
@@ -101,6 +138,41 @@
             <h2>Blog Posts</h2>
             <input type="text" id="searchBar" class="form-control" placeholder="Search blog posts...">
             <ul id="postList">
+                <li class="post-card">
+                    <a class="post-card-image-link" href="/post-1.html">
+                        <img class="post-card-image" src="path/to/image1.jpg" alt="Alt Text for Post 1">
+                    </a>
+                    <div class="post-card-content">
+                        <a class="post-card-content-link" href="/post-1.html">
+                            <header class="post-card-header">
+                                <h2 class="post-card-title">Post Title 1</h2>
+                            </header>
+                            <div class="post-card-excerpt">A brief excerpt of the first post goes here...</div>
+                        </a>
+                        <footer class="post-card-meta">
+                            <time class="post-card-meta-date" datetime="2024-05-08">May 8, 2024</time>
+                            <span class="post-card-meta-length">3 min read</span>
+                        </footer>
+                    </div>
+                </li>
+                <li class="post-card">
+                    <a class="post-card-image-link" href="/post-2.html">
+                        <img class="post-card-image" src="path/to/image2.jpg" alt="Alt Text for Post 2">
+                    </a>
+                    <div class="post-card-content">
+                        <a class="post-card-content-link" href="/post-2.html">
+                            <header class="post-card-header">
+                                <h2 class="post-card-title">Post Title 2</h2>
+                            </header>
+                            <div class="post-card-excerpt">A brief excerpt of the second post goes here...</div>
+                        </a>
+                        <footer class="post-card-meta">
+                            <time class="post-card-meta-date" datetime="2024-05-01">May 1, 2024</time>
+                            <span class="post-card-meta-length">2 min read</span>
+                        </footer>
+                    </div>
+                </li>
+                <!-- Add more blog posts here following the same structure -->
             </ul>
         </section>
     </main>
