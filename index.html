@@ -6,23 +6,24 @@
     <title>Ivan's macOS Security Research Blog</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        /* Custom styling inline for simplicity - you may want to move this to an external CSS file */
         body {
-            background-color: #ffffff; /* White background */
-            color: #333333; /* Dark gray text */
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* Apple-like fonts */
+            background-color: #f2f2f2; /* Light grey background */
+            color: #333; /* Dark grey text */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
         header {
-            text-align: center;
+            background-color: #fff; /* White background for the header */
             padding: 20px 0;
-            border-bottom: 1px solid #e0e0e0; /* Light gray border */
+            border-bottom: 1px solid #ccc;
+            text-align: center;
         }
 
         header h1 {
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: #333333; /* Dark gray for good contrast */
+            font-size: 24px; /* Smaller font size than your original */
+            color: #333;
         }
 
         nav ul {
@@ -34,9 +35,9 @@
         }
 
         nav a {
-            color: #0071e3; /* Apple's signature blue */
+            color: #007aff; /* Bright blue link color */
             text-decoration: none;
-            font-weight: 500;
+            padding: 10px;
         }
 
         nav a:hover {
@@ -44,40 +45,39 @@
         }
 
         main {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            line-height: 1.6;
+            margin: auto;
+            padding: 20px;
+            max-width: 1200px; /* Wider than your original */
         }
 
-        h2 {
-            font-size: 2rem;
-            font-weight: 600;
+        .news-item {
+            background-color: #fff;
             margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
         }
 
-        ul#postList {
-            list-style: none;
-            padding: 0;
+        .news-item h2 {
+            font-size: 20px;
         }
 
-        ul#postList li {
+        .news-item p {
+            font-size: 16px;
+        }
+
+        .news-image {
+            width: 100%;
+            height: auto;
             margin-bottom: 15px;
         }
 
-        ul#postList li a {
-            color: #0071e3;
-            text-decoration: none;
-            font-weight: 500;
-        }
+        @media (max-width: 768px) {
+            header h1, .news-item h2 {
+                font-size: 18px;
+            }
 
-        ul#postList li a:hover {
-            text-decoration: underline;
-        }
-         /* Media query for smaller screens */
-         @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem; /* Smaller font size for mobile devices */
+            .news-item p {
+                font-size: 14px;
             }
         }
     </style>
@@ -94,27 +94,15 @@
         </nav>
     </header>
     <main>
-        <section>
-            <div style="text-align: center; padding: 20px;">
-                <h2>Here you can find <br>red team stuff <br>related to macOS</h2>
-                <p style="font-size: 1.2rem; max-width: 800px; margin: auto;">
-                    Explore the forefront of cybersecurity as it relates to macOS. Here, we delve into the latest trends, 
-                    security challenges, and innovations shaping the future of Mac security. Each post offers in-depth 
-                    analysis, practical tips, and a deeper understanding of how to protect digital environments 
-                    against evolving threats. Whether you're a security professional, a macOS enthusiast, or someone 
-                    passionate about technology's intersection with security, this blog serves as your gateway to 
-                    becoming more informed and proactive about cybersecurity.
-                </p>
-            </div>
-        </section>
-        
-        <section>
-            <h2>Latest Posts</h2>
-            <ul id="postList"></ul>
-        </section>
+        <!-- Sample Post -->
+        <div class="news-item">
+            <img class="news-image" src="path/to/your/image.jpg" alt="Descriptive Alt Text">
+            <h2>Amazing Article Title</h2>
+            <p>Summary or intro of the article...</p>
+        </div>
+        <!-- More posts like the above -->
     </main>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/scripts/main.js"></script>
 </body>
 </html>
