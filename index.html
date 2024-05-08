@@ -35,28 +35,58 @@
         }
 
         nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 30px; /* Increased spacing */
-}
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
 
-nav a {
-    color: #aaa; /* Soft gray color */
-    text-decoration: none;
-    font-weight: 400; /* Lighter font weight */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
-    padding: 10px 15px; /* Padding to increase clickable area */
-}
+        nav a {
+            color: #aaa;
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.3s ease;
+            padding: 10px 15px;
+        }
 
-nav a:hover {
-    color: #333; /* Darker color on hover */
-    text-decoration: none; /* Still no underline */
-    border-bottom: 2px solid #333; /* Subtle bottom border on hover */
-}
+        nav a:hover {
+            color: #333;
+            text-decoration: none;
+            border-bottom: 2px solid #333;
+        }
 
-        main {
+        .menu-btn {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .nav-overlay {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: black;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .nav-overlay a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 36px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .nav-overlay a:hover, .nav-overlay a:focus {
+            color: #f1f1f1;
+        }        main {
             max-width: 800px;
             margin: 40px auto;
             padding: 0 20px;
