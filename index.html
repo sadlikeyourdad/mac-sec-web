@@ -22,10 +22,10 @@
         }
 
         header .logo {
-            width: 36px;
-            height: 48px;
-            margin-bottom: 10px;
-            fill: #0071e3; /* Apple's signature blue */
+            width: 100%; /* Full width of its container */
+            max-width: 36px; /* Maximum width */
+            height: auto; /* Maintain aspect ratio */
+            fill: currentColor; /* Inherit color */
         }
 
         header h1 {
@@ -87,6 +87,9 @@
         @media (max-width: 768px) {
             header h1 {
                 font-size: 2rem;
+            }
+            header .logo {
+                max-width: 24px; /* Smaller logo on smaller screens */ 
             }
         }
     </style>
