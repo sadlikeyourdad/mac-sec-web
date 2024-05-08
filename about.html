@@ -125,64 +125,35 @@
                 max-width: 24px;
             }
         }
-        form {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #f9f9f9;
-    border-radius: 8px;
-}
-
-.form-group {
+        main h2 {
+    font-size: 2rem;
+    font-weight: 600;
     margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    color: #666;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box; /* Makes sure the width includes padding */
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-    border-color: #0056b3;
-    outline: none;
-}
-
-button.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button.btn-primary:hover {
-    background-color: #0069d9;
-    border-color: #0062cc;
-}
-
-.social-media p {
     text-align: center;
-    margin-top: 20px;
 }
 
-.social-media a {
-    color: #007bff;
-    text-decoration: none;
+main p, main ul {
+    font-size: 1.1rem;
+    text-align: center;
+    list-style-type: none; /* Removes bullet points from the list */
+    padding: 0; /* Removes padding from the list */
 }
+
+main ul li {
+    margin-bottom: 10px; /* Adds space between list items */
+}
+
+main a {
+    color: #0071e3; /* Apple's hyperlink blue */
+    text-decoration: none; /* No underline on links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+main a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline; /* Underline on hover for better visibility */
+}
+
 
     </style>
 </head>
@@ -218,26 +189,15 @@ button.btn-primary:hover {
         </section>
         <section>
             <h2>Contact Me</h2>
-            <p>If you have any questions or would like to get in touch, feel free to contact me through the following means:</p>
-            <form action="mailto:awsaccount45@proton.me" method="post" enctype="text/plain">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" class="form-control" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send</button>
-            </form>
-            <div class="social-media">
-                <p>Follow me on X: <a href="https://twitter.com/cryformancy" target="_blank">@cryformancy</a></p>
-            </div>
+            <p>
+                If you have any questions or need further information, please feel free to reach out to me:
+            </p>
+            <ul>
+                <li>Email: <a href="mailto:ivan@example.com">ivan@example.com</a></li>
+                <li>Twitter: <a href="https://twitter.com/ivanhandle" target="_blank">@ivanhandle</a></li>
+            </ul>
         </section>
+        
         
     </main>
     <script>
