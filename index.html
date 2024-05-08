@@ -35,22 +35,26 @@
         }
 
         nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Increased spacing */
+}
 
-        nav a {
-            color: #0071e3;
-            text-decoration: none;
-            font-weight: 500;
-        }
+nav a {
+    color: #aaa; /* Soft gray color */
+    text-decoration: none;
+    font-weight: 400; /* Lighter font weight */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    padding: 10px 15px; /* Padding to increase clickable area */
+}
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+nav a:hover {
+    color: #333; /* Darker color on hover */
+    text-decoration: none; /* Still no underline */
+    border-bottom: 2px solid #333; /* Subtle bottom border on hover */
+}
 
         main {
             max-width: 800px;
