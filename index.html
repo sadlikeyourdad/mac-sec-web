@@ -63,16 +63,17 @@
         }
 
         .nav-overlay {
-    height: 0; /* Initially no height */
-    width: 100%; /* Full width */
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: black;
-    overflow-x: hidden;
-    transition: height 0.5s ease; /* Animate height instead of width */
-}
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: black;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
 
         .nav-overlay a {
             padding: 10px 15px;
@@ -91,14 +92,6 @@
             padding: 0 20px;
             line-height: 1.6;
         }
-        .closebtn {
-    position: absolute;
-    top: 10px;
-    right: 25px; /* Adjust position to the right */
-    font-size: 36px; /* Make it larger */
-    color: white;
-}
-
 
         h2 {
             font-size: 2rem;
@@ -186,11 +179,11 @@
     </main>
     <script>
         function openNav() {
-            document.getElementById("myNav").style.height = "100%";
+            document.getElementById("myNav").style.width = "100%";
         }
 
         function closeNav() {
-            document.getElementById("myNav").style.height = "0%";
+            document.getElementById("myNav").style.width = "0%";
         }
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
