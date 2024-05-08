@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan's macOS Security Research Blog</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom styling inline for simplicity - you may want to move this to an external CSS file */
+        body {
+            background-color: #ffffff; /* White background */
+            color: #333333; /* Dark gray text */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* Apple-like fonts */
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #e0e0e0; /* Light gray border */
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #333333; /* Dark gray for good contrast */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #0071e3; /* Apple's signature blue */
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        pre {
+            background-color: #f6f8fa; /* Light gray background */
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ivan's macOS Security Research Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About Me</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Local Phishing on macOS using Applescript to get user password</h2>
+            <p>This post will walk through the basics of penetration testing and how ethical hackers uncover vulnerabilities.</p>
+            
+            <h3>What is Penetration Testing?</h3>
+            <p>Penetration testing, also known as pen testing, is the practice of testing a computer system, network or web application to find vulnerabilities that an attacker could exploit.</p>
+
+            <h3>Basic Tools Used</h3>
+            <p>Here are some of the fundamental tools used in penetration testing:</p>
+            <ul>
+                <li>Metasploit</li>
+                <li>Wireshark</li>
+                <li>Nmap</li>
+                <li>Burp Suite</li>
+            </ul>
+            
+            <h3>Example of a Simple Test</h3>
+            <p>Below is an example of a simple network scan using Nmap:</p>
+            <pre><code>sudo nmap -sS 192.168.1.1</code></pre>
+
+            <h3>Screenshots</h3>
+            <p>Here's a screenshot demonstrating the use of Wireshark to monitor network traffic:</p>
+            <img src="../assets/images/wireshark_example.png" alt="Wireshark Example">
+
+            <h3>Conclusion</h3>
+            <p>Penetration testing is a crucial practice for improving the security of systems. It helps organizations identify vulnerabilities before they can be exploited maliciously.</p>
+        </article>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
