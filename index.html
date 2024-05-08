@@ -63,17 +63,16 @@
         }
 
         .nav-overlay {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: black;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 60px;
-        }
+    height: 0; /* Initially no height */
+    width: 100%; /* Full width */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: height 0.5s ease; /* Animate height instead of width */
+}
 
         .nav-overlay a {
             padding: 10px 15px;
