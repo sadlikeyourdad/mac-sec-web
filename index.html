@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan's macOS Security Research Blog</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        /* Custom styling inline for simplicity - you may want to move this to an external CSS file */
+        body {
+            background-color: #ffffff; /* White background */
+            color: #333333; /* Dark gray text */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* Apple-like fonts */
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #e0e0e0; /* Light gray border */
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #333333; /* Dark gray for good contrast */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #0071e3; /* Apple's signature blue */
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        ul#postList {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul#postList li {
+            margin-bottom: 15px;
+        }
+
+        ul#postList li a {
+            color: #0071e3;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        ul#postList li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ivan's macOS Security Research Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div style="text-align: center; padding: 20px;">
+                <h2>Welcome to Ivan's macOS Security Research Blog</h2>
+                <p style="font-size: 1.2rem; max-width: 800px; margin: auto;">
+                    Explore the forefront of cybersecurity as it relates to macOS. Here, we delve into the latest trends, 
+                    security challenges, and innovations shaping the future of Mac security. Each post offers in-depth 
+                    analysis, practical tips, and a deeper understanding of how to protect digital environments 
+                    against evolving threats. Whether you're a security professional, a macOS enthusiast, or someone 
+                    passionate about technology's intersection with security, this blog serves as your gateway to 
+                    becoming more informed and proactive about cybersecurity.
+                </p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Latest Posts</h2>
+            <ul id="postList"></ul>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/scripts/main.js"></script>
+</body>
+</html>

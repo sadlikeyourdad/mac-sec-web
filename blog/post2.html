@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penetration Testing Basics</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <header class="container-fluid p-3 mb-4 bg-dark text-white">
+        <h1>Penetration Testing Basics</h1>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="../about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="../blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <article>
+            <h2 class="mb-3">Introduction to Penetration Testing</h2>
+            <p>This post will walk through the basics of penetration testing and how ethical hackers uncover vulnerabilities.</p>
+            
+            <h3 class="mt-4 mb-2">What is Penetration Testing?</h3>
+            <p>Penetration testing, also known as pen testing, is the practice of testing a computer system, network or web application to find vulnerabilities that an attacker could exploit.</p>
+
+            <h3 class="mt-4 mb-2">Basic Tools Used</h3>
+            <p>Here are some of the fundamental tools used in penetration testing:</p>
+            <ul>
+                <li>Metasploit</li>
+                <li>Wireshark</li>
+                <li>Nmap</li>
+                <li>Burp Suite</li>
+            </ul>
+            
+            <h3 class="mt-4 mb-2">Example of a Simple Test</h3>
+            <p>Below is an example of a simple network scan using Nmap:</p>
+            <pre><code>sudo nmap -sS 192.168.1.1</code></pre>
+
+            <h3 class="mt-4 mb-2">Screenshots</h3>
+            <p>Here's a screenshot demonstrating the use of Wireshark to monitor network traffic:</p>
+            <img src="../assets/images/wireshark_example.png" alt="Wireshark Example" class="img-fluid">
+
+            <h3 class="mt-4 mb-2">Conclusion</h3>
+            <p>Penetration testing is a crucial practice for improving the security of systems. It helps organizations identify vulnerabilities before they can be exploited maliciously.</p>
+        </article>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

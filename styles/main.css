@@ -1,0 +1,47 @@
+/* General styling */
+body {
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Dark gray text for good contrast */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li a {
+    color: #0077cc; /* Blue links for good visibility */
+    text-decoration: none;
+}
+
+header h1 {
+    text-align: center;
+    color: #0077cc; /* Match header color to link color */
+}
+
+main {
+    margin: 20px;
+}
+
+article h2 {
+    color: #0077cc; /* Keep blog post title colors consistent with header and links */
+}
+/* In styles/main.css */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
