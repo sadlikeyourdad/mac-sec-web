@@ -8,10 +8,11 @@
     <style>
         /* Custom styling inline for simplicity - you may want to move this to an external CSS file */
         body {
-            background-color: #ffffff;
-            color: #333333;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        }
+    font-size: 16px; /* Adjust base font size if necessary */
+    line-height: 1.8; /* Increase line height for better readability */
+    color: #333; /* Adjusting for optimal contrast */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
 
         header {
             text-align: center;
@@ -94,23 +95,47 @@
             line-height: 1.6;
         }
 
-        h2 {
-            font-size: 2rem;
-            font-weight: 600;
-            margin-bottom: 20px;
-        }
+        h1, h2, h3, h4, h5, h6 {
+    color: #333; /* Ensuring heading colors are consistent */
+    font-weight: 600; /* Making headings slightly bolder */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+h1 {
+    font-size: 2.0rem; /* Adjust to fit your design */
+}
 
-        pre {
-            background-color: #f6f8fa; /* Light gray background */
-            padding: 10px;
-            border-radius: 5px;
-        }
+h2 {
+    font-size: 1.75rem; /* Making secondary headings slightly smaller */
+}
 
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
+h3 {
+    font-size: 1.5rem; /* Further reducing size for tertiary headings */
+}
+
+
+        p {
+    margin-bottom: 1em; /* Ensure paragraphs are nicely spaced */
+}
+
+ul {
+    padding-left: 20px; /* Add padding to list inside articles */
+    list-style-type: disc; /* Optional: change list item indicator */
+}
+
+pre, code {
+    background-color: #f4f4f4; /* Lighter background for code blocks */
+    border: 1px solid #ccc; /* Add border to code elements */
+    padding: 8px; /* Padding inside code blocks */
+    font-size: 0.9rem; /* Smaller font size for code */
+    display: block;
+    overflow-x: auto; /* Ensures code blocks are scrollable horizontally */
+}
+
+img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+}
          /* Media query for smaller screens */
          @media (max-width: 768px) {
             header h1 {
