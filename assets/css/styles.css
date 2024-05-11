@@ -203,7 +203,6 @@ input#searchBar {
 }
 
 pre {
-    font-size: 16px;
     background-color: #f8f9fa; /* Light gray background for better contrast */
     border: 1px solid #ccc;    /* Light border around code blocks */
     overflow: auto;            /* Enables scrolling both horizontally and vertically */
@@ -215,6 +214,7 @@ pre {
 }
 
 code {
+    font-size: 16px;
     display: block; /* Ensures code block displays correctly */
 }
 
