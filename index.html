@@ -44,13 +44,17 @@
         </section>
     </main>
     <script>
-        function openNav() {
-            document.getElementById("myNav").style.width = "100%";
-        }
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+        document.getElementById("myNav").style.right = "0"; // Added
+        document.getElementById("myNav").style.left = "auto"; // Added
+    }
 
-        function closeNav() {
-            document.getElementById("myNav").style.width = "0%";
-        }
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+        document.getElementById("myNav").style.right = "auto"; // Added
+    }
+</script>
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
