@@ -91,10 +91,9 @@ nav a:hover {
 
 main {
     max-width: 900px;
-    margin: 5px auto;
+    margin: 5px auto; /* Changed to 'auto' to ensure horizontal centering */
     padding: 0 20px;
     line-height: 1.6;
-    
 }
 
 h2 {
@@ -122,6 +121,7 @@ ul#postList li a {
 ul#postList li a:hover {
     text-decoration: underline;
 }
+
 
 input#searchBar {
     font-size: 1.1rem;
