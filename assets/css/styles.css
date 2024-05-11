@@ -202,32 +202,24 @@ input#searchBar {
     width: 100%; /* Adjusts width to account for left and right margins */
 }
 
-pre {
-    background-color: #f8f9fa; /* Light gray background for better contrast */
-    border: 1px solid #ccc;    /* Light border around code blocks */
-    overflow: auto;            /* Enables scrolling both horizontally and vertically */
-    padding: 15px;             /* Adds padding inside the code block */
-    font-family: 'Courier New', Courier, monospace; /* Ensures monospaced font */
-    line-height: 1.5;          /* Adjust line spacing for readability */
-    white-space: pre;          /* Maintains whitespace formatting */
-    margin-bottom: 20px;       /* Adds space below the code block */
-}
+pre[class*="language-"] {
+            max-height: 300px; /* Adjust as needed */
+            overflow-y: auto;
+            margin: 0.5em 0;
+            padding: 1em;
+            background: #2d2d2d;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
 
-code {
-    display: block; /* Ensures code block displays correctly */
-}
-
-pre code::before {
-    content: counter(linenumber);
-    counter-increment: linenumber;
-    position: absolute;
-    left: 0;
-    text-align: right;
-    width: 3em; /* Width of the line number area */
-    padding-right: 10px; /* Space between line numbers and code */
-    color: #888; /* Color of line numbers */
-    border-right: 1px solid #ddd; /* Separator for line numbers */
-}
+        .line-numbers-rows {
+            display: inline-block;
+            padding-right: 1em;
+            text-align: right;
+            vertical-align: top;
+            user-select: none;
+            opacity: 0.5;
+        }
 
 @media (max-width: 768px) {
     header h1 {
