@@ -199,7 +199,7 @@ input#searchBar {
     margin-right: 20px; /* Adds space to the right */
     border: 1px solid #e0e0e0;
     display: block; /* Ensures it takes the full available width with margins */
-    width: calc(100% - 40px); /* Adjusts width to account for left and right margins */
+    width: 100%; /* Adjusts width to account for left and right margins */
 }
 
 pre {
