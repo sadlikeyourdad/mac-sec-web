@@ -102,6 +102,46 @@ done
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
     <script>
+    // Add line numbers to all code blocks within pre tags
+    document.addEventListener("DOMContentLoaded", function() {
+        // Select all <pre><code> blocks
+        const codeBlocks = document.querySelectorAll('pre code');
+
+        // Loop through each code block
+        codeBlocks.forEach(block => {
+            // Get the number of lines in the code block by splitting its text
+            const lines = block.textContent.split('\n').length;
+
+            // Initialize an empty string for line numbers
+            let numbers = '';
+
+            // Generate the line numbers
+            for (let i = 1; i <= lines; i++) {
+                numbers += `${i}\n`;
+            }
+
+            // Create a span element for the line numbers
+            const numbersElement = document.createElement('span');
+            numbersElement.classList.add('line-numbers-rows');
+            numbersElement.textContent = numbers;
+
+            // Style and position the span
+            numbersElement.style.position = 'absolute';
+            numbersElement.style.left = '0';
+            numbersElement.style.width = '3em';
+            numbersElement.style.paddingRight = '10px';
+            numbersElement.style.textAlign = 'right';
+            numbersElement.style.color = '#888';
+            numbersElement.style.borderRight = '1px solid #ddd';
+
+            // Add the line numbers span to the code block
+            block.style.position = 'relative';
+            block.style.paddingLeft = '4em'; // Adjust padding for line numbers
+            block.prepend(numbersElement);
+        });
+    });
+</script>
+    <script>
     // Get the modal
     var modal = document.getElementById('myModal');
 
