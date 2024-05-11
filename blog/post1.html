@@ -6,6 +6,7 @@
     <title>Ivan's macOS Security Research Blog</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism-okaidia.min.css">
 </head>
 <body>
     <header>
@@ -57,7 +58,7 @@
             
             <h4>Example of a Simple Test</h4>
             <p>Below is an example of a simple network scan using Nmap:</p>
-            <pre><code>#!/bin/bash
+            <pre class="line-numbers"><code class="language-bash">#!/bin/bash
 #
 # Reveal rootkits that hide processes from getdents() calls to /proc
 #
@@ -97,6 +98,9 @@ done
             <p>Penetration testing is a crucial practice for improving the security of systems. It helps organizations identify vulnerabilities before they can be exploited maliciously.</p>
         </article>
     </main>
+    <!-- Add Prism.js JavaScript for syntax highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
     <script>
     // Get the modal
     var modal = document.getElementById('myModal');
@@ -129,46 +133,6 @@ done
             document.getElementById("myNav").style.width = "0%";
         }
     </script>
-    <script>
-    // Add line numbers to all code blocks within pre tags
-    document.addEventListener("DOMContentLoaded", function() {
-        // Select all <pre><code> blocks
-        const codeBlocks = document.querySelectorAll('pre code');
-
-        // Loop through each code block
-        codeBlocks.forEach(block => {
-            // Get the number of lines in the code block by splitting its text
-            const lines = block.textContent.split('\n').length;
-
-            // Initialize an empty string for line numbers
-            let numbers = '';
-
-            // Generate the line numbers
-            for (let i = 1; i <= lines; i++) {
-                numbers += `${i}\n`;
-            }
-
-            // Create a span element for the line numbers
-            const numbersElement = document.createElement('span');
-            numbersElement.classList.add('line-numbers-rows');
-            numbersElement.textContent = numbers;
-
-            // Style and position the span
-            numbersElement.style.position = 'absolute';
-            numbersElement.style.left = '0';
-            numbersElement.style.width = '3em';
-            numbersElement.style.paddingRight = '10px';
-            numbersElement.style.textAlign = 'right';
-            numbersElement.style.color = '#888';
-            numbersElement.style.borderRight = '1px solid #ddd';
-
-            // Add the line numbers span to the code block
-            block.style.position = 'relative';
-            block.style.paddingLeft = '4em'; // Adjust padding for line numbers
-            block.prepend(numbersElement);
-        });
-    });
-</script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 </body>
