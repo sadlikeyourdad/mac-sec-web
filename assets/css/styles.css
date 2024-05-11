@@ -71,7 +71,8 @@ nav a:hover {
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
+    left: auto;
+    right: 0;
     background-color: black;
     overflow-x: hidden;
     transition: 0.2s;
@@ -80,6 +81,7 @@ nav a:hover {
 
 .nav-overlay a {
     padding: 10px 15px;
+    text-align: right; /* Added */
     text-decoration: none;
     font-size: 36px;
     color: white;
