@@ -77,11 +77,12 @@ nav a:hover {
     overflow-x: hidden;
     transition: 0.2s;
     padding-top: 60px;
+    text-align: right; /* Added */
 }
 
 .nav-overlay a {
     padding: 10px 15px;
-    text-align: right; /* Added */
+    
     text-decoration: none;
     font-size: 36px;
     color: white;
