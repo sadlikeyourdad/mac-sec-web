@@ -91,9 +91,10 @@ nav a:hover {
 
 main {
     max-width: 900px;
-    margin: 40px auto;
+    margin: 5px auto;
     padding: 0 20px;
     line-height: 1.6;
+    
 }
 
 h2 {
