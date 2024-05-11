@@ -203,13 +203,14 @@ input#searchBar {
 }
 
 pre {
-    position: relative; /* Needed to position line numbers correctly */
-    line-height: 1.5;
-    overflow: auto; /* Enables scrolling */
-    padding-left: 3.5em; /* Space for line numbers */
-    counter-reset: linenumber; /* Initialize the counter for line numbers */
-    white-space: nowrap; /* Disables wrapping of text */
+    background-color: #f8f9fa; /* Light gray background for better contrast */
+    border: 1px solid #ccc;    /* Light border around code blocks */
+    overflow: auto;            /* Enables scrolling both horizontally and vertically */
+    padding: 15px;             /* Adds padding inside the code block */
     font-family: 'Courier New', Courier, monospace; /* Ensures monospaced font */
+    line-height: 1.5;          /* Adjust line spacing for readability */
+    white-space: pre;          /* Maintains whitespace formatting */
+    margin-bottom: 20px;       /* Adds space below the code block */
 }
 
 code {
