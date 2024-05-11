@@ -93,7 +93,7 @@ nav a:hover {
 
 main {
     max-width: 900px;
-    margin: 5px auto; /* Changed to 'auto' to ensure horizontal centering */
+    margin: 10px auto; /* Changed to 'auto' to ensure horizontal centering */
     padding: 0 20px;
     line-height: 1.6;
 }
