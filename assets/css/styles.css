@@ -205,12 +205,11 @@ input#searchBar {
 pre {
     background-color: #f8f9fa; /* Light gray background for better contrast */
     border: 1px solid #ccc;    /* Light border around code blocks */
-    overflow-x: auto;           /* Makes horizontal scrollbar appear if code overflows */
-    padding: 15px;              /* Adds padding inside the code block */
+    overflow: auto;            /* Makes both horizontal and vertical scrollbars appear if code overflows */
+    padding: 15px;             /* Adds padding inside the code block */
     font-family: 'Courier New', Courier, monospace; /* Monospaced font for code */
-    line-height: 1.5;           /* Adjust line spacing for readability */
-    white-space: pre-wrap;      /* Ensures long lines wrap if no horizontal scrollbar is needed */
-    word-wrap: break-word;      /* Ensures words break to prevent horizontal overflow */
+    line-height: 1.5;          /* Adjust line spacing for readability */
+    white-space: pre;          /* Prevents wrapping of content within the pre block */
 }
 
 code {
