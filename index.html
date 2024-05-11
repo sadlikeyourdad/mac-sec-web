@@ -44,20 +44,14 @@
         </section>
     </main>
     <script>
-    function openNav() {
-        const overlay = document.getElementById("myNav");
-        overlay.style.width = "100%";
-        overlay.style.right = "0"; // Add or update to expand from the right
-        overlay.style.left = "auto"; // Ensure left positioning is disabled
-    }
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
 
-    function closeNav() {
-        const overlay = document.getElementById("myNav");
-        overlay.style.width = "0%";
-        overlay.style.left = "0"; // Reset to fold back from left
-        overlay.style.right = "auto"; // Ensure right positioning is disabled
-    }
-</script>
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <script src="assets/scripts/main.js"></script>
