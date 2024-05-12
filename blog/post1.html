@@ -96,8 +96,7 @@ for i in $(seq 2 "$(cat /proc/sys/kernel/pid_max)"); do
     exe=$(readlink "/proc/$i/exe")
     cmdline=$(tr '\000' ' ' <"/proc/$i/cmdline")
     echo "- hidden $(cat /proc/$i/comm)[${i}] is running ${exe}: ${cmdline}"
-done
-            </code></pre>
+done</code></pre>
 
             <h4>Screenshots</h4>
             <p>Here's a screenshot demonstrating the use of Wireshark to monitor network traffic:</p>
