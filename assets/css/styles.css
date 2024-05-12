@@ -271,4 +271,7 @@ pre code::before {
     header .logo {
         max-width: 24px;
     }
+    body {
+    font-size: 18px;
+    }
 }
