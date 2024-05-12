@@ -258,6 +258,9 @@ pre code::before {
     color: #888; /* Color of line numbers */
     border-right: 1px solid #ddd; /* Separator for line numbers */
 }
+span {
+    font-size: 20px;   
+}
 
 @media (max-width: 768px) {
     header h1 {
