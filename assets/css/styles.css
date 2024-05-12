@@ -5,7 +5,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 h1 {
-    font-size: 2rem;
+    font-size: 42px;
     font-weight 600;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -260,7 +260,7 @@ pre code::before {
 
 @media (max-width: 768px) {
     header h1 {
-        font-size: 2rem;
+        font-size: 32px;
     }
     .menu-btn {
         display: block;
