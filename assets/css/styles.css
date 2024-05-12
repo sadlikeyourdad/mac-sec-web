@@ -268,10 +268,13 @@ span {
     body {
     font-size: 18px;
     }
-    span {
+    pre {
     font-size: 16px;   
 }
     code {
+    font-size: 16px;   
+}
+    span {
     font-size: 16px;   
 }
 }
