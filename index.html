@@ -60,5 +60,39 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <script src="assets/scripts/main.js"></script>
+    <script>
+    if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+            console.log('ServiceWorker registration failed: ', err);
+        });
+    });
+}
+<script>
+<script>self.addEventListener('install', function(event) {
+    event.waitUntil(
+        caches.open('v1').then(function(cache) {
+            return cache.addAll([
+                '/',
+                '/index.html',
+                '/assets/css/styles.css',
+                '/assets/scripts/main.js',
+                '/icons/icon-192x192.png',
+                '/icons/icon-512x512.png'
+            ]);
+        })
+    );
+});
+
+self.addEventListener('fetch', function(event) {
+    event.respondWith(
+        caches.match(event.request).then(function(response) {
+            return response || fetch(event.request);
+        })
+    );
+});
+</script>
 </body>
 </html>
