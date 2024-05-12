@@ -70,6 +70,7 @@ header h1 {
     font-weight: 600;
     color: #333333;
     margin-bottom: 0px;
+    text-align: center;
 }
 main {
     max-width: 900px;
