@@ -247,7 +247,7 @@ code {
     display: block; /* Ensures code block displays correctly */
 }
 
-pre code::before {
+pre code {
     content: counter(linenumber);
     counter-increment: linenumber;
     position: absolute;
