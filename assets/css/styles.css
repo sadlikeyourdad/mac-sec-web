@@ -278,4 +278,7 @@ span {
     body {
     font-size: 18px;
     }
+    span {
+    font-size: 16px;   
+}
 }
