@@ -255,31 +255,40 @@ span {
 }
 
 @media (max-width: 768px) {
+    body {
+        font-size: 17px; /* Reduced by 15% */
+    }
+    h1 {
+        font-size: 27.2px; /* Reduced by 15% */
+    }
+    h2 {
+        font-size: 23.8px; /* Reduced by 15% */
+    }
+    h3 {
+        font-size: 21.25px; /* Reduced by 15% */
+    }
+    h4 {
+        font-size: 18.75px; /* Reduced by 15% */
+    }
+    h5 {
+        font-size: 15.3px; /* Reduced by 15% */
+    }
     header h1 {
-        font-size: 32px;
+        font-size: 32px; /* Adjusted size for better readability */
+    }
+    nav a {
+        font-size: 12px; /* Reduced by 15% */
     }
     .menu-btn {
-        display: block;
-    }
-    nav ul {
-        display: none;
-    }
-    header h1 {
-    padding-bottom: 0px;
-}
-    header .logo {
-        max-width: 24px;
-    }
-    body {
-    font-size: 18px;
+        font-size: 25.5px; /* Reduced by 15% */
     }
     pre {
-    font-size: 18px;   
-}
+        font-size: 18px; /* Adjusted size for better readability */
+    }
     code {
-    font-size: 18px;   
-}
+        font-size: 18px; /* Adjusted size for better readability */
+    }
     span {
-    font-size: 18px;   
-}
+        font-size: 18px; /* Adjusted size for better readability */
+    }
 }
