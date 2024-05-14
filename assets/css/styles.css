@@ -265,7 +265,7 @@ span {
         display: none;
     }
     header h1 {
-    padding-bottom: 8px;
+    padding-bottom: 0px;
 }
     header .logo {
         max-width: 24px;
