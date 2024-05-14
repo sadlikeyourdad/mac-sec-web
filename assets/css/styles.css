@@ -264,6 +264,9 @@ span {
     nav ul {
         display: none;
     }
+    header h1 {
+    padding-bottom: 8px;
+}
     header .logo {
         max-width: 24px;
     }
