@@ -256,7 +256,7 @@ span {
 
 @media (max-width: 768px) {
     body {
-        font-size: 17px; /* Reduced by 15% */
+        font-size: 11px; /* Reduced by 15% */
     }
     h1 {
         font-size: 27.2px; /* Reduced by 15% */
