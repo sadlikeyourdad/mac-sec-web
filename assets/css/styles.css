@@ -70,7 +70,9 @@ header h1 {
     font-size: 40px;
     font-weight: 600;
     color: #333333;
+    padding-top: 10px;
     padding-bottom: 20px;
+    margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
 }
