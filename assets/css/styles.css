@@ -256,31 +256,19 @@ span {
 
 @media (max-width: 768px) {
     body {
-        font-size: 11px; /* Reduced by 15% */
-    }
-    h1 {
-        font-size: 27.2px; /* Reduced by 15% */
-    }
-    h2 {
-        font-size: 23.8px; /* Reduced by 15% */
-    }
-    h3 {
-        font-size: 21.25px; /* Reduced by 15% */
-    }
-    h4 {
-        font-size: 18.75px; /* Reduced by 15% */
-    }
-    h5 {
-        font-size: 15.3px; /* Reduced by 15% */
+        font-size: 17px; /* Reduced by 15% */
     }
     header h1 {
-        font-size: 32px; /* Adjusted size for better readability */
+        padding-bottom: 0px; /* Adjusted size for better readability */
     }
-    nav a {
-        font-size: 12px; /* Reduced by 15% */
+    header .logo {
+        max-width: 24px;
+    }
+    nav ul {
+        display: none;
     }
     .menu-btn {
-        font-size: 25.5px; /* Reduced by 15% */
+        display: block; /* Reduced by 15% */
     }
     pre {
         font-size: 18px; /* Adjusted size for better readability */
