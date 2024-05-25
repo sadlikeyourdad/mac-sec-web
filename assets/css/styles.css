@@ -259,7 +259,7 @@ span {
         font-size: 17px; /* Reduced by 15% */
     }
     header h1 {
-        font-size: 32px
+        font-size: 32px;
         padding-bottom: 0px; /* Adjusted size for better readability */
     }
     header .logo {
