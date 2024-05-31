@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism-okaidia.min.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/monokai.min.css">
 </head>
 <body>
     <header>
@@ -55,7 +56,8 @@
             <center style="color:#787878; padding-top:5px;">Diagram</center>
             <h3>make_dmg_from_python.sh</h3>
             <p></p>
-            <pre class="line-numbers"><code class="language-bash">#!/bin/sh
+            <textarea id="code" name="code">
+#!/bin/sh
 
 # References
 # https://www.pythonguis.com/tutorials/packaging-pyqt5-applications-pyinstaller-macos-dmg/
@@ -98,7 +100,8 @@ create-dmg \
   "dist/CryptoSafePDF.dmg" \
   "dist/dmg/"
 
-echo "Packaging complete. You can find the DMG installer in the dist/ directory."</code></pre>
+echo "Packaging complete. You can find the DMG installer in the dist/ directory."
+</textarea>
             <h3>Conclusion</h3>
             <p>Penetration testing is a crucial practice for improving the security of systems. It helps organizations identify vulnerabilities before they can be exploited maliciously.</p>
         </article>
@@ -176,6 +179,15 @@ echo "Packaging complete. You can find the DMG installer in the dist/ directory.
             document.getElementById("myNav").style.width = "0%";
         }
     </script>
-    
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
+          lineNumbers: true,
+          mode: "shell",
+          theme: "monokai",
+          readOnly: true
+        });
+      });
+    </script>
 </body>
 </html>
